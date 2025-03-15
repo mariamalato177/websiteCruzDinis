@@ -347,5 +347,13 @@ Version:	1.1
 		}
 	  });
 
+	  function changeLanguage(language) {
+		if(language === 'en') {
+		  window.location.href = '/en/';
+		} else if(language === 'pt') {
+		  window.location.href = '/pt/';
+		}
+	  }
+
 
 })(jQuery);

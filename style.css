@@ -255,7 +255,7 @@ body{
 	border-bottom:1px solid #eee;
 }
 .header .topbar{
-	padding:15px 0;
+	padding:1px 0;
 }
 .header .top-link{
 	float:left;
@@ -3378,7 +3378,7 @@ body{
 }
 .contact-us .single-info {
 	background: DarkSalmon;
-	padding: 40px 60px;
+	padding: 30px 60px;
 	height: 150px;
 	border-radius: 10px;
 	position:relative;
@@ -3418,6 +3418,7 @@ body{
 	color:#fff;
 	position:absolute;
 	left:40px;
+	top:35px;
 }
 .contact-us .single-info .content {
 	margin-left: 45px;
@@ -3426,11 +3427,11 @@ body{
 	color:#fff;
 	font-size:18px;
 	font-weight:600;
+	padding-bottom: 3%;
 	
 }
 .contact-us .single-info .content p{
 	color:#fff;
-	margin-top:5px;
 }
 /* Google Map */
 .contact-us #myMap {
