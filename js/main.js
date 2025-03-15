@@ -336,24 +336,39 @@ Version:	1.1
 
 
 
-	document.addEventListener("keydown", function(e) {
+	document.addEventListener("keydown", function (e) {
 		if (
-		  e.key === "F12" || 
-		  (e.ctrlKey && e.shiftKey && e.key === "I") || 
-		  (e.ctrlKey && e.shiftKey && e.key === "J") || 
-		  (e.ctrlKey && e.key === "U")
+			e.key === "F12" ||
+			(e.ctrlKey && e.shiftKey && e.key === "I") ||
+			(e.ctrlKey && e.shiftKey && e.key === "J") ||
+			(e.ctrlKey && e.key === "U")
 		) {
-		  e.preventDefault();
+			e.preventDefault();
 		}
-	  });
+	});
 
-	  function changeLanguage(language) {
-		if(language === 'en') {
-		  window.location.href = '/en/';
-		} else if(language === 'pt') {
-		  window.location.href = '/pt/';
-		}
-	  }
+
+	document.querySelector(".form").addEventListener("submit", function (event) {
+		event.preventDefault();
+
+		let formData = new FormData(this);
+
+		fetch("enviar_email.php", {
+			method: "POST",
+			body: formData
+		})
+			.then(response => response.text())
+			.then(data => {
+				if (data.trim() === "success") {
+					alert("Email enviado com sucesso!");
+				} else {
+					alert("Ocorreu um erro ao enviar o email.");
+				}
+			})
+			.catch(error => console.error("Erro:", error));
+	});
+
+
 
 
 })(jQuery);

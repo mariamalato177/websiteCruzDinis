@@ -1,22 +1,26 @@
-<?
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST['name'];
+    $email = $_POST['email'];
+    $telefone = $_POST['phone'];
+    $assunto = $_POST['subject'];
+    $mensagem = $_POST['message'];
 
-$email_message = "
+    $para = "mariamalato2004@gmail.com"; // Altere para seu e-mail real
+    $titulo = "Novo contato do formulário";
 
-Name: ".$name."
-Email: ".$email."
-Phone: ".$phone."
-Subject: ".$subject."
-Message: ".$message."
+    $corpo = "Nome: $nome\n";
+    $corpo .= "Email: $email\n";
+    $corpo .= "Telefone: $telefone\n";
+    $corpo .= "Assunto: $assunto\n";
+    $corpo .= "Mensagem:\n$mensagem\n";
 
-";
+    $headers = "From: $email\r\nReply-To: $email\r\n";
 
-mail ("tec.capilar.cruzdinis@gmail.com" , "New Message", $email_message);
-header("location: ../mail-success.html");
+    if (mail($para, $titulo, $corpo, $headers)) {
+        echo "success"; // Resposta para o JavaScript
+    } else {
+        echo "error";
+    }
+}
 ?>
-
-
