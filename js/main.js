@@ -348,25 +348,7 @@ Version:	1.1
 	});
 
 
-	document.querySelector(".form").addEventListener("submit", function (event) {
-		event.preventDefault();
-
-		let formData = new FormData(this);
-
-		fetch("enviar_email.php", {
-			method: "POST",
-			body: formData
-		})
-			.then(response => response.text())
-			.then(data => {
-				if (data.trim() === "success") {
-					alert("Email enviado com sucesso!");
-				} else {
-					alert("Ocorreu um erro ao enviar o email.");
-				}
-			})
-			.catch(error => console.error("Erro:", error));
-	});
+	
 
 
 
