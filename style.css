@@ -1010,7 +1010,7 @@ body{
 }
 .why-choose .choose-right{
 	height:100%;
-	width:100%;
+	width:460px;
 	background-image:url('images/imgs_Dr/videoIMG.jpg');
 	background-size:cover;
 	background-position:center;
@@ -1134,7 +1134,7 @@ body{
 	Start Portfolio CSS
 ============================*/
 .portfolio{
-	background:#FDFDFD;
+	background:none;
 }
 .portfolio .single-pf{
 	position:relative;
@@ -2285,10 +2285,7 @@ body{
 	border-radius: 8px;
 }
 .news-single .news-head{}
-.news-single .news-head img{
-	width:100%;
-	height:100%;
-}
+
 .news-single .news-title {
 	font-size: 25px;
 	margin: 20px 0;
@@ -4169,3 +4166,30 @@ body{
 /*=========================
 	End Footer CSS
 ===========================*/
+
+
+.why-choose .choose-right-2{
+	height:500px;
+	width:90%;
+	background-image:url('images/drCruz.jpeg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	position:relative;
+	border-radius:8px;
+}
+.why-choose .choose-right-2 .video {
+	color: #fff;
+	width: 70px;
+	line-height: 70px;
+	text-align: center;
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -35px;
+	margin-top: -35px;
+	font-size: 21px;
+	background: DarkSalmon;
+	padding-left: 4px;
+}
