@@ -59,40 +59,6 @@ function changeSlide(n) {
 
 
 
-const translations = {
-    pt: {
-        cirurgiao: "Cirurgião Capilar",
-        casos: "Casos Clínicos",
-        tratamentos: "Tratamentos ▾",
-        prp: "PRP",
-        consultas: "Consultas Tricologia",
-        avaliacao: "Marcar Avaliação",
-        contactos: "Contactos",
-        slide1_title: "Casos Clínicos",
-        slide1_text: "Dr. Cruz Dinis é um cirurgião capilar com mais de 20 anos de experiência. Realiza cirurgias capilares com resultados incríveis. Marque já a sua avaliação.",
-        slide2_title: "Dr. Cruz Dinis",
-        slide2_text: "Dr. Cruz Dinis é um cirurgião capilar com mais de 20 anos de experiência. Realiza cirurgias capilares com resultados incríveis. Marque já a sua avaliação.",
-        slide3_title: "Marcar Avaliação",
-        slide3_text: "Dr. Cruz Dinis é um cirurgião capilar com mais de 20 anos de experiência. Realiza cirurgias capilares com resultados incríveis. Marque já a sua avaliação.",
-        main_section: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis."
-    },
-    en: {
-        cirurgiao: "Hair Surgeon",
-        casos: "Clinical Cases",
-        tratamentos: "Treatments ▾",
-        prp: "PRP",
-        consultas: "Trichology Consultations",
-        avaliacao: "Book Evaluation",
-        contactos: "Contacts",
-        slide1_title: "Clinical Cases",
-        slide1_text: "Dr. Cruz Dinis is a hair surgeon with over 20 years of experience. He performs hair surgeries with incredible results. Book your evaluation now.",
-        slide2_title: "Dr. Cruz Dinis",
-        slide2_text: "Dr. Cruz Dinis is a hair surgeon with over 20 years of experience. He performs hair surgeries with incredible results. Book your evaluation now.",
-        slide3_title: "Book Evaluation",
-        slide3_text: "Dr. Cruz Dinis is a hair surgeon with over 20 years of experience. He performs hair surgeries with incredible results. Book your evaluation now.",
-        main_section: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis."
-    }
-};
 
 function changeLanguage() {
     let lang = document.getElementById("language-select").value;
