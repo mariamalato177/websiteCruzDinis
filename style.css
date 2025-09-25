@@ -1,8 +1,8 @@
 /* =====================================
-Template Name: 	Mediplus.
+Template Name: 	Dr.Cruzdinis
 Author Name: Naimur Rahman
 Website: http://wpthemesgrid.com/
-Description: Mediplus - Doctor HTML Template.
+Description: Dr.Cruzdinis - Doctor HTML Template.
 Version:	1.1
 ========================================*/   
 /*======================================
@@ -280,11 +280,10 @@ body{
 }
 .header .top-contact li{
 	display:inline-block;
-	margin-right:25px;
 	color:rgb(231, 130, 97);
 }
 .header .top-contact li:last-child{
-	margin-right:0;
+	float: right;
 }
 .header .top-contact li a{
 	font-size:14px;
@@ -1197,12 +1196,20 @@ body{
 	display:none;
 }
 /* Slider Nav */
+.pf-details .image-slider {
+    border: 3px solid DarkSalmon;  /* cria a borda */
+    border-radius: 8px;            /* já tinhas radius, ajustei para uniformizar */
+    padding: 10px;                 /* espaço entre a borda e o slider */
+    background: #fff;              /* fundo branco opcional */
+}
+
 .pf-details .image-slider .owl-nav{
 	margin: 0;
     position: absolute;
     top: 50%;
     width: 100%;
-	margin-top:-25px;
+	
+	
 }
 .pf-details .image-slider .owl-carousel .owl-nav div {
 	height: 50px;

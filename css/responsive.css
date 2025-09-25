@@ -376,7 +376,7 @@ Version:	1.1
 
 }
 /* Mobile Screen */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1214px) {
 .header.sticky{
 	
 }
@@ -395,9 +395,7 @@ Version:	1.1
 	padding-bottom: 20px;
 	background: #fff;
 }
-.slicknav_menu{
-	display:block;
-}
+
 .slicknav_menu {
 	display: block;
 	background: transparent;
@@ -406,27 +404,11 @@ Version:	1.1
 .slicknav_btn {
 	background: transparent;
 	padding: 0;
-	margin-top: -30px;
 }
 .slicknav_menu .slicknav_icon-bar{
 	box-shadow:none;
 }
-.slicknav_menu{
-	display:block;
-}
-.slicknav_menu {
-	display: block;
-	background: transparent;
-	padding: 0;
-}
-.slicknav_btn {
-	background: transparent;
-	padding: 0;
-	margin-top: 28px;
-}
-.slicknav_menu .slicknav_icon-bar{
-	box-shadow:none;
-}
+
 .slicknav_nav {
 	clear: both;
 	color: #2C2D3F;
